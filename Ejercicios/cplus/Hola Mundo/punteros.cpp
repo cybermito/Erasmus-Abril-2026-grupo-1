@@ -12,6 +12,11 @@ int main(){
     int *puntero = &number; //Creamos un puntero al que le asignamos la dirección de memoria
     // de la variable number.
 
+    char letra = 'A'; //Creamos una variable de tipo char con valor A
+    char *punteroLetra = &letra; //Creamos un puntero al que le asignamos la dirección de memoria
+    // de la variable letra.
+    
+    
     cout << "Valor de la variable number: " << number << endl;
     cout << "Dirección de memoria de la variable number: " << &number << endl;
     cout << "Dirección de la variable puntero: " << &puntero << endl;
@@ -23,4 +28,5 @@ int main(){
 
     //Mostrando el nuevo valor
     cout << "Nuevo valor de la variable number: " << number;
+    return 0;
 }
