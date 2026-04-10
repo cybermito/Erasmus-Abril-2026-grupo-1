@@ -1,1 +1,5 @@
-./cplus/output/
+#Ignorando todas las carpetas de compilación
+output/
+build/
+dist/
+bin/
