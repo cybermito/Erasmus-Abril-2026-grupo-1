@@ -18,15 +18,22 @@ int main(){
     
     
     cout << "Valor de la variable number: " << number << endl;
+    cout << "Valor de la variable letra: " << letra << endl;
     cout << "Dirección de memoria de la variable number: " << &number << endl;
+    cout << "Dirección de memoria de la variable letra: " << (int *) &letra << endl; // Convertimos en entero el valor de la dirección de memoria
     cout << "Dirección de la variable puntero: " << &puntero << endl;
+    cout << "Dirección de la variable punteroLetra; " << &punteroLetra << endl;
     cout << "Dirección de memoria a la que apunta el puntero: " << puntero << endl;
+    cout << "Dirección de memoria a la que apunta el punteroLetra: " << (int *) punteroLetra << endl; // Convertimos en entero el valor de la dirección de memoria.
     cout << "Valor del contenido de la dirección de memoria a la que apunta el puntero: " << *puntero << endl;
+    cout << "Valor del contenido de la dirección de memoria a la que apunta el punteroLetra: " << *punteroLetra << endl; 
 
     // cambiando el valor del contenido de la variable desde el puntero
     *puntero = 1974;
+    *punteroLetra = 'b';
 
     //Mostrando el nuevo valor
     cout << "Nuevo valor de la variable number: " << number;
+    cout << "Nuevo valor de la variable letra: " << letra << endl;
     return 0;
 }
